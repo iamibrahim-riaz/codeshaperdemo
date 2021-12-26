@@ -34,7 +34,7 @@ const Counter = () => {
     ];
 
     return(
-        <div className="cs-counter">
+        <div id="counter" className="cs-counter">
             <div className="cs-container">
                 {counters &&
                     <div className="counter-part">

@@ -8,7 +8,7 @@ import carImg1 from '../../assets/img/icons/car.png'
 const CaseStudy = () => {
 
     return (
-        <div className="cs-case-study">
+        <div id="case-shop" className="cs-case-study">
             <div className="cs-container">
                 <div className="service-part">
                     <div className="single-service">
