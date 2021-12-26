@@ -1,6 +1,8 @@
 import React from 'react';
 import HomeMain from './HomeMain';
 import Header from './HeaderSection'
+import Footer from './FooterSection'
+import ScrollToTop from '../../components/ScrollTop';
 
 class HomePage extends React.Component {
     render() {
@@ -8,6 +10,9 @@ class HomePage extends React.Component {
             <React.Fragment>
                 <Header />
                 <HomeMain />
+                <Footer />
+                <ScrollToTop />
+
             </React.Fragment>
         );
     }
