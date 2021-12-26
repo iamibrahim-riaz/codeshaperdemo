@@ -27,7 +27,7 @@ const Testimonial = () => {
 
     return (
         <React.Fragment>
-            <div className="cs-testimonial">
+            <div id="testimonial" className="cs-testimonial">
                 <div className="cs-container">
                     <div className="testimonial-divider">
                         <div className="left-part">

@@ -11,7 +11,7 @@ const About = () => {
     const openModal = () => setIsOpen(!isOpen);
 
     return (
-        <div className="cs-about">
+        <div id="about" className="cs-about">
             <div className="cs-container relative">
                 <div className="rotate-text">
                     <span className="rotate-title">AIVONS</span>

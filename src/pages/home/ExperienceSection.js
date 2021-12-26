@@ -6,7 +6,7 @@ import bucketImg1 from '../../assets/img/icons/bucket.png'
 const Experience = () => {
 
     return (
-        <div className="cs-experience">
+        <div id="experience" className="cs-experience">
             <div className="cs-container">
                 <div className="sec-title text-center pb-85 md-pb-50">
                     <h2 className="title white-color">REAL-WORLD EXPERIENCE</h2>

@@ -5,7 +5,7 @@ import tabImg1 from '../../assets/img/tab/1.png'
 const BusinessTab = () => {
 
     return (
-        <div className="cs-business-tab">
+        <div id="tab" className="cs-business-tab">
             <div className="cs-container">
                 <div className="cs-tab-part">
                     <ul className="cs-business-nav nav-tabs" id="businessTabs" role="tablist">

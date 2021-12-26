@@ -78,7 +78,7 @@ const Header = () => {
 
     return (
         <React.Fragment>            
-            <div className="cs-header">
+            <div id="header" className="cs-header">
                 <div className={isVisible ? 'menu-bar menu-sticky sticky' : 'menu-bar menu-sticky'}>
                     <div className="logo-part">
                         <a href="#"><img src={Logo} alt="Logo" /></a>

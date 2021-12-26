@@ -3,7 +3,7 @@
 const CTA = () => {
 
     return (
-        <div className="cs-cta">
+        <div id="cta" className="cs-cta">
             <div className="cs-container">
                 <div className="cta-part">
                     <h2 className="title">MISSION IS TO PROTECT <br />YOUR BUSINESSES & <br />MUCH MORE</h2>

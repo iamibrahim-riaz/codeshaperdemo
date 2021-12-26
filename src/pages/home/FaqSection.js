@@ -4,7 +4,7 @@ import faqImg1 from '../../assets/img/faq/1.png'
 const Faq = () => {
 
     return (
-        <div className="cs-faq">
+        <div id="faq" className="cs-faq">
             <div className="cs-container">
                 <div className="sec-title text-center pb-75 md-pb-50">
                     <h2 className="title title-color">QUESTION ANSWERS</h2>

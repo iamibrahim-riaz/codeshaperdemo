@@ -8,7 +8,7 @@ import mapImg from '../../assets/img/icons/map.png';
 
 const Footer = () => {
     return (
-        <div className="cs-footer">
+        <div id="footer" className="cs-footer">
             <div className="cs-container">
                 <div className="cs-footer-widget">
                     <div className="cs-widget-address single-widget">

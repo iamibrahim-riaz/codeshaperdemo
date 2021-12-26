@@ -5,7 +5,7 @@ const Banner = () => {
 
     return (
         <React.Fragment>
-            <div className="cs-banner">
+            <div id="banner" className="cs-banner">
                 <div className="slider-part">
                     <div className="single-slide">
                         <div className="cs-container">
