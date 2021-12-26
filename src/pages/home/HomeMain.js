@@ -1,51 +1,57 @@
 import React, { Component } from 'react';
-import HomeSlider from './SliderSection';
-import Service from './ServiceSection';
-import Portfolio from './PortfolioSection';
-import Resume from './ResumeSection';
-import Contact from './ContactSection';
-import Footer from './FooterSection'
-import ScrollToTop from '../../components/ScrollTop';
+import CTA from './CTASection';
+import Faq from './FaqSection';
+import About from './AboutSection';
+import Banner from './BannerSection';
+import BusinessTab from './TabSection';
+import Counter from './CounterSection';
+import CaseStudy from './CaseStudySection';
+import Experience from './ExperienceSection';
+import Testimonial from './TestimonialSection';
 
-class HomeMain extends Component {
+const HomeMain = () => {
+	return (
+		<React.Fragment>
+			<main className="cs-main-content">
+				{/* Banner-start */}
+				<Banner />
+				{/* Banner-start */}
 
-	render() {
+				{/* Experience-area-start */}
+				<Experience />
+				{/* Experience-area-end */}
 
-		return (
-			<React.Fragment>
-				<main className="page-wrapper-two">
-					{/* SliderSection-start */}
-					<HomeSlider />
-					{/* SliderSection-start */}
+				{/* About-area-start */}
+				<About />
+				{/* About-area-end */}
 
-					{/* Service-area-start */}
-					<Service />
-					{/* Service-area-end */}
+				{/* CaseStudy-area-start */}
+				<CaseStudy />
+				{/* CaseStudy-area-end */}
 
-					{/* Portfolio-area-start */}
-					<Portfolio />
-					{/* Portfolio-area-end */}
+				{/* CTA-area-start */}
+				<CTA />
+				{/* CTA-area-end */}
 
-					{/* Resume-area-start */}
-					<Resume />
-					{/* Resume-area-end */}
+				{/* Faq-area-start */}
+				<Faq />
+				{/* Faq-area-end */}
 
-					{/* Contact-area-start */}
-					<Contact />
-					{/* Contact-area-end */}
+				{/* Testimonial-area-start */}
+				<Testimonial />
+				{/* Testimonial-area-end */}
 
-					{/* Footer-area-start */}
-					<Footer />
-					{/* Footer-area-end */}
+				{/* Counter-area-start */}
+				<Counter />
+				{/* Counter-area-end */}
 
-					{/* scrolltop-start */}
-					<ScrollToTop />
-					{/* scrolltop-end */}
-				</main>
+				{/* BusinessTab-area-start */}
+				<BusinessTab />
+				{/* BusinessTab-area-end */}
+			</main>
 
-			</React.Fragment>
-		);
-	}
+		</React.Fragment>
+	);
 }
 
 export default HomeMain;

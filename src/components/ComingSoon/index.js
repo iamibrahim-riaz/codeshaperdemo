@@ -12,11 +12,11 @@ const ComingSoon = () => {
                         </h2>
                         <div className="btn-part">
                             <Link to="/">
-                                <a className="readon orange-btn main-home">Back To Homepage</a>
+                                <a className="btn">Back To Homepage</a>
                             </Link>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
 	);

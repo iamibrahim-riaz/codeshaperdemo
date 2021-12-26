@@ -5,7 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
 import './assets/scss/main.scss';
-// import './assets/css/style.css';
 
 ReactDOM.render(
 	<React.StrictMode>
