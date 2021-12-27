@@ -85,7 +85,7 @@ const Header = () => {
             <div id="header" className="cs-header">
                 <div className={isVisible ? 'menu-bar menu-sticky sticky' : 'menu-bar menu-sticky'}>
                     <div className="logo-part">
-                        <a href="#"><img src={Logo} alt="Logo" /></a>
+                        <Link to="#"><img src={Logo} alt="Logo" /></Link>
                     </div>
                     <div className="cs-container">
                         <div className="menu-part">
@@ -93,7 +93,7 @@ const Header = () => {
                                 {/* Mobile Menu Start */}
                                 <div className="mobile-menu-part">
                                     <div className="mobile-menu-logo">
-                                        <a href="#"><img src={Logo} alt="Logo" /></a>
+                                        <Link to="#"><img src={Logo} alt="Logo" /></Link>
                                     </div>
                                     <button className={menuOpen ? "mobile-menu-icon open" : "mobile-menu-icon"} onClick={() => { setMenuOpen(!menuOpen) }} aria-label="Main Menu Icon">
                                         <span></span>
@@ -120,10 +120,10 @@ const Header = () => {
 
                                 <div className="social-part">
                                     <ul className="social-icon">
-                                        <li><a href="#"><i className="icofont-instagram"></i></a></li>
-                                        <li><a href="#"><i className="icofont-linkedin"></i></a></li>
-                                        <li><a href="#"><i className="icofont-twitter"></i></a></li>
-                                        <li><a href="#"><i className="icofont-facebook"></i></a></li>
+                                        <li><a href="#" target='_blank'><i className="icofont-instagram"></i></a></li>
+                                        <li><a href="#" target='_blank'><i className="icofont-linkedin"></i></a></li>
+                                        <li><a href="#" target='_blank'><i className="icofont-twitter"></i></a></li>
+                                        <li><a href="#" target='_blank'><i className="icofont-facebook"></i></a></li>
                                     </ul>
                                     <div className="searchbar">
                                         <Link to="#" onClick={searchModalAdd}><i className="icofont-search-1"></i></Link>
@@ -134,7 +134,7 @@ const Header = () => {
                     </div>
                     <div className="contact-part">
                         <span>Need Help?</span>
-                        <a href="+tel:926668880000">+92 666 888 0000</a>
+                        <a href="+tel:926668880000" target='_blank'>+92 666 888 0000</a>
                     </div>
                 </div>
             </div>            

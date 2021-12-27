@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="cs-footer-widget">
                     <div className="cs-widget-address single-widget">
                         <div className="cs-footer-logo">
-                            <a href="#"><img src={Logo} alt="Footer Logo" /></a>
+                            <Link to="#"><img src={Logo} alt="Footer Logo" /></Link>
                         </div>
 
                         <p className="cs-footer-desc">Welcome to our consultancy agency. Lore ipsum simply text amet cing elit simply text amet cing elit.</p>
@@ -21,11 +21,11 @@ const Footer = () => {
                         <div className="cs-footer-address">
                             <div className="single-contact">
                                 <span><img src={phoneImg} alt="" /></span>
-                                <a href="+tel:926668880000">+92 666 888 0000</a>
+                                <a href="+tel:926668880000" target='_blank'>+92 666 888 0000</a>
                             </div>
                             <div className="single-contact">
                                 <span><img src={emailImg} alt="" /></span>
-                                <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                                <a href="mailto:needhelp@company.com" target='_blank'>needhelp@company.com</a>
                             </div>
                             <div className="single-contact">
                                 <span><img src={mapImg} alt="" /></span>
@@ -37,17 +37,17 @@ const Footer = () => {
                     <div className="cs-widget-links single-widget">
                         <h3 className="cs-widget-title">Explore</h3>
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Meet Our Team</a></li>
-                            <li><a href="#">Case Studies</a></li>
-                            <li><a href="#">Latest News</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><Link to="#">About</Link></li>
+                            <li><Link to="#">Meet Our Team</Link></li>
+                            <li><Link to="#">Case Studies</Link></li>
+                            <li><Link to="#">Latest News</Link></li>
+                            <li><Link to="#">Contact</Link></li>
                         </ul>
                         <ul>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy & Policy</a></li>
-                            <li><a href="#">Help</a></li>
+                            <li><Link to="#">Support</Link></li>
+                            <li><Link to="#">Terms of Use</Link></li>
+                            <li><Link to="#">Privacy & Policy</Link></li>
+                            <li><Link to="#">Help</Link></li>
                         </ul>
                     </div>
 
@@ -67,12 +67,12 @@ const Footer = () => {
 
                 <div className="cs-copyright">
                     <div className="cs-container">
-                        <p className="copyright-text">© 2021 All Right Reserved, <a href="#">Codeshaper</a></p>
+                        <p className="copyright-text">© 2021 All Right Reserved, <a href="#" target='_blank'>Codeshaper</a></p>
                         <ul className="cs-social-profile">
-                            <li><a href="#"><i className="icofont-facebook"></i></a></li>
-                            <li><a href="#"><i className="icofont-twitter"></i></a></li>
-                            <li><a href="#"><i className="icofont-youtube"></i></a></li>
-                            <li><a href="#"><i className="icofont-dribbble"></i></a></li>
+                            <li><a href="#" target='_blank'><i className="icofont-facebook"></i></a></li>
+                            <li><a href="#" target='_blank'><i className="icofont-twitter"></i></a></li>
+                            <li><a href="#" target='_blank'><i className="icofont-youtube"></i></a></li>
+                            <li><a href="#" target='_blank'><i className="icofont-dribbble"></i></a></li>
                         </ul>
                     </div>
                 </div>
