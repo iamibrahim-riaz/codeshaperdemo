@@ -639,6 +639,11 @@ body {
                                 }
                             }                            
                         }
+                        &.active {
+                            a {
+                                color: var(--primary-color);
+                            }
+                        }
                         &:hover {
                             .sub-menu {
                                 opacity: 1;

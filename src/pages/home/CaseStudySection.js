@@ -1,6 +1,7 @@
 
 
 import SingleCaseStudy from '../../components/CaseStudy/SingleCaseStudy'
+import SingleService from '../../components/Services/SingleService'
 import caseImg1 from '../../assets/img/case-study/1.png'
 import carImg1 from '../../assets/img/icons/car.png'
 
@@ -10,24 +11,8 @@ const CaseStudy = () => {
         <div id="case-shop" className="cs-case-study">
             <div className="cs-container">
                 <div className="service-part">
-                    <div className="single-service">
-                        <div className="list-number">
-                            <span className="list-title">01</span>
-                        </div>
-                        <div className="service-content">
-                            <h3 className="title">GET PROFESSIONAL ADVICE</h3>
-                            <p>There are many variations of available but the majority have suffered alteration.</p>
-                        </div>
-                    </div>
-                    <div className="single-service">
-                        <div className="list-number">
-                            <span className="list-title">02</span>
-                        </div>
-                        <div className="service-content">
-                            <h3 className="title">TRUSTED & PROFESSIONAL</h3>
-                            <p>There are many variations of available but the majority have suffered alteration.</p>
-                        </div>
-                    </div>
+                    <SingleService /> 
+                    <SingleService /> 
                 </div>
                 <div className="sec-title text-center pb-85 md-pb-50">
                     <h2 className="title title-color uppercase">New Case Studies</h2>
