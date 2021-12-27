@@ -1,3 +1,12 @@
+import React from "react";
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemState,
+    AccordionItemPanel,
+    AccordionItemButton,
+} from 'react-accessible-accordion';
 
 import faqImg1 from '../../assets/img/faq/1.png'
 
@@ -12,65 +21,48 @@ const Faq = () => {
                 </div>
                 <div className="faq-section-part">
                     <div className="faq-part">
-                        <div id="accordion">
-                            <div className="card">
-                                <div className="card-header" id="headingOne">
-                                    <h5 className="mb-0">
-                                        <button className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <span>1.</span> THINK AHEAD AND BOOST YOUR BUSINESS?
-                                        </button>
-                                    </h5>
-                                </div>
-
-                                <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div className="card-body">
-                                        There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-header" id="headingTwo">
-                                    <h5 className="mb-0">
-                                        <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <span>2.</span> HOW CONSULTANCY EXPERTS WORK?
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                    <div className="card-body">
-                                        There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-header" id="headingThree">
-                                    <h5 className="mb-0">
-                                        <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <span>3.</span> WHAT IS THE BEST ADVICE FOR GROWTH?
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                    <div className="card-body">
-                                        There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card">
-                                <div className="card-header" id="headingFour">
-                                    <h5 className="mb-0">
-                                        <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            <span>4.</span> HOW TO IMPROVE YOUR BUSINESS?
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                    <div className="card-body">
-                                        There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Accordion className="accodion-style--1" preExpanded={'0'}>
+                            <AccordionItem uuid='0'>
+                                <AccordionItemHeading>
+                                    <AccordionItemButton>
+                                        <span>1.</span> THINK AHEAD AND BOOST YOUR BUSINESS?
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel>
+                                    <p className='accodion-body'>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.</p>
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                            <AccordionItem uuid='1'>
+                                <AccordionItemHeading>
+                                    <AccordionItemButton>
+                                        <span>2.</span> HOW CONSULTANCY EXPERTS WORK?
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel>
+                                    <p className='accodion-body'>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.</p>
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                            <AccordionItem uuid='2'>
+                                <AccordionItemHeading>
+                                    <AccordionItemButton>
+                                        <span>3.</span> WHAT IS THE BEST ADVICE FOR GROWTH?
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel>
+                                    <p className='accodion-body'>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.</p>
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                            <AccordionItem uuid='3'>
+                                <AccordionItemHeading>
+                                    <AccordionItemButton>
+                                        <span>4.</span> HOW TO IMPROVE YOUR BUSINESS?
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel>
+                                    <p className='accodion-body'>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.</p>
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                        </Accordion>
                     </div>
                     <div className="faq-content-part">
                         <div className="img-part">

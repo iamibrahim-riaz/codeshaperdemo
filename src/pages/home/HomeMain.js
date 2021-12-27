@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CTA from './CTASection';
 import Faq from './FaqSection';
 import About from './AboutSection';

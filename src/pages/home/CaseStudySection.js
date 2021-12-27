@@ -1,5 +1,4 @@
 
-import Fade from 'react-reveal/Fade';
 
 import SingleCaseStudy from '../../components/CaseStudy/SingleCaseStudy'
 import caseImg1 from '../../assets/img/case-study/1.png'
