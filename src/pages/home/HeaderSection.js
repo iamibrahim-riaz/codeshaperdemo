@@ -104,8 +104,8 @@ const Header = () => {
                                 {/* Mobile Menu End */}
                                 
                                 <ul className={menuOpen ? "nav-menu menu-open" : "nav-menu"}>
-                                    <li className="active"><a onClick={() => { addActiveClass('header'); document.getElementById("header").scrollIntoView({behavior: 'smooth'}) } }>Home</a></li>
-                                    <li><a onClick={() => { addActiveClass('services'); document.getElementById("services").scrollIntoView({behavior: 'smooth'}) } }>Services</a></li>
+                                    <li className={header ? "active" : ""}><a onClick={() => { addActiveClass('header'); document.getElementById("header").scrollIntoView({behavior: 'smooth'}) } }>Home</a></li>
+                                    <li className={services ? "active" : ""}><a onClick={() => { addActiveClass('services'); document.getElementById("services").scrollIntoView({behavior: 'smooth'}) } }>Services</a></li>
                                     <li className="menu-item-has-children"><a onClick={() => { openMobileMenu('pages'); }}>Pages</a>
                                         <ul className={pages ? "sub-menu sub-menu-open" : "sub-menu"}>
                                             <li><a onClick={() => { addActiveClass('blog'); document.getElementById("testimonial").scrollIntoView({behavior: 'smooth'}) } }>Blog</a></li>
@@ -113,9 +113,9 @@ const Header = () => {
                                             <li><a onClick={() => { addActiveClass('services'); document.getElementById("services").scrollIntoView({behavior: 'smooth'}) } }>Services</a></li>
                                         </ul>
                                     </li>
-                                    <li><a onClick={() => { addActiveClass('caseShop'); document.getElementById("case-shop").scrollIntoView({behavior: 'smooth'}) } }>Case Shop</a></li>
-                                    <li><a onClick={() => { addActiveClass('blog'); document.getElementById("testimonial").scrollIntoView({behavior: 'smooth'}) } }>Blog</a></li>
-                                    <li><a onClick={() => { addActiveClass('content'); document.getElementById("tab").scrollIntoView({behavior: 'smooth'}) } }>Content</a></li>
+                                    <li className={caseShop ? "active" : ""}><a onClick={() => { addActiveClass('caseShop'); document.getElementById("case-shop").scrollIntoView({behavior: 'smooth'}) } }>Case Shop</a></li>
+                                    <li className={blog ? "active" : ""}><a onClick={() => { addActiveClass('blog'); document.getElementById("testimonial").scrollIntoView({behavior: 'smooth'}) } }>Blog</a></li>
+                                    <li className={content ? "active" : ""}><a onClick={() => { addActiveClass('content'); document.getElementById("tab").scrollIntoView({behavior: 'smooth'}) } }>Content</a></li>
                                 </ul>
 
                                 <div className="social-part">
