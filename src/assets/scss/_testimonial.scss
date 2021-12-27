@@ -1,0 +1,204 @@
+.cs-testimonial {
+    padding: 100px 0 150px;
+    background: #f2f4f8;
+    .slick-list {
+        margin: -10px -15px -30px;
+        padding: 10px 0 30px;
+        .slick-slide {
+          > div {
+            margin: 0 15px;
+          }            
+        }
+    }
+    .slick-arrow {
+        top: 70%;
+        transform: unset;
+        color: #000;
+        background: #fff;
+        border-radius: 100%;
+        &:before {
+          color: #000;
+        }
+        &:hover {
+          &:before {
+            color: var(--primary-color);
+          }
+        }
+    }
+    .slick-prev {
+        left: -480px;
+    }
+    .slick-next {
+        left: -415px;
+    }
+    .testimonial-divider {
+        display: flex;
+        .left-part {
+            margin-right: 50px;
+        }
+        .right-part {
+            width: 100%;
+            max-width: 925px;
+        }
+    }
+    .sec-title {
+        .title {
+            font-size: 65px;
+            line-height: 75px;
+        }
+    }
+    .cs-testimonial-slider {
+        .single-testimonial {
+            padding: 40px 30px 80px;
+            background: var(--white-color);
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.14);
+            .testi-info {
+                .testi-name {
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+                .testi-designation {
+                    margin: 0;
+                }
+            }
+            .testi-photo {
+                position: absolute;
+                bottom: -30px;
+            }
+        }
+    }
+}
+
+// Responsive Part CSS
+
+/* Layout: Max 1500px */
+@media only screen and (max-width: 1500px) {
+    
+    /*Testimonial Part CSS*/
+    .cs-testimonial .slick-prev {
+        left: -450px;
+    }
+
+    .cs-testimonial .slick-next {
+        left: -380px;
+    }
+
+}
+
+/* Layout: Max 1440px */
+@media only screen and (max-width: 1440px) {
+
+    /*Testimonial Part CSS*/
+    .cs-testimonial .sec-title .title {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .cs-testimonial .testimonial-divider .right-part {
+        max-width: 750px;
+    }
+    .cs-testimonial .slick-arrow {
+        top: 60%;
+    }
+    .cs-testimonial .slick-prev {
+        left: -430px;
+    }
+    .cs-testimonial .slick-next {
+        left: -370px;
+    }
+
+}
+
+/* Layout: Max 1366px. */
+@media only screen and (max-width: 1366px) {
+
+    /*Testimonial Part CSS*/
+    .cs-testimonial .sec-title .title {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .cs-testimonial .testimonial-divider .right-part {
+        max-width: 750px;
+    }
+    .cs-testimonial .slick-arrow {
+        top: 60%;
+    }
+    .cs-testimonial .slick-prev {
+        left: -360px;
+    }
+    .cs-testimonial .slick-next {
+        left: -300px;
+    }
+
+}
+
+/* Layout: Max 1300px */
+@media only screen and (max-width: 1300px) {  
+
+    /*Testimonial Part CSS*/
+    .cs-testimonial .slick-arrow {
+        display: none;
+    }
+    .cs-testimonial .sec-title .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+}
+
+/* Layout: Min 1199px */
+@media only screen and (max-width: 1199px) { 
+
+    /*Testimonial Part CSS*/
+    .cs-testimonial .testimonial-divider {
+        display: block;
+    }
+    .cs-testimonial .testimonial-divider .left-part {
+        margin: 0 0 50px;
+    }
+    .cs-testimonial .testimonial-divider .right-part {
+        max-width: unset;
+    }
+
+}
+
+/* Medium Layout: Max 991px. */
+@media only screen and (max-width: 991px) {
+
+    /*Testimonial Part CSS*/
+    .cs-testimonial {
+        padding: 70px 0 110px;
+    }
+
+}
+
+/* Mobile Layout: 767px. */
+@media only screen and (max-width: 767px) {
+
+    /*Testimonial Part CSS*/
+    .cs-testimonial .sec-title .title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .cs-testimonial .testimonial-divider .left-part {
+        margin: 0 0 30px;
+    }
+    .cs-testimonial .cs-testimonial-slider .single-testimonial {
+        padding: 40px 30px;
+    }
+    .cs-testimonial .cs-testimonial-slider .single-testimonial .testi-photo {
+        position: unset;
+        margin-top: 10px;
+    }
+
+}
+
+/* Small Device : 480px. */
+@media only screen and (max-width: 480px) {
+
+    /*Testimonial Part CSS*/
+    .cs-testimonial .sec-title .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+

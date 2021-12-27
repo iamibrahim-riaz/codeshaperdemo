@@ -305,7 +305,7 @@
         display: flex !important;
     }
     .cs-header .menu-bar .menu-part .cs-main-menu .nav-menu {
-        width: calc(100% - 50px);
+        width: 100%;
         padding: 25px;
         background: var(--white-color);
         height: 0;
@@ -667,6 +667,8 @@
     .cs-experience .experience-part .single-experience .content-part {
         margin: 0;
     }
+    
+    /*Client Part CSS*/
     .client-part .client-title {
         width: 100%;
         text-align: center;
@@ -725,15 +727,16 @@
     }
 
     /*Faq Part CSS*/
-    .cs-faq .faq-section-part .faq-part .card .card-header .btn {
+    .cs-faq .faq-section-part .faq-part .accordion__item .accordion__heading .accordion__button {
         padding: 0 15px;
         font-size: 13px;
     }
-    .cs-faq .faq-section-part .faq-part .card .card-header .btn::before {
+    .cs-faq .faq-section-part .faq-part .accordion__item .accordion__heading .accordion__button[aria-expanded="true"]::before,
+    .cs-faq .faq-section-part .faq-part .accordion__item .accordion__heading .accordion__button[aria-expanded="false"]::before {
         font-size: 20px;
         right: 10px;
     }
-    .cs-faq .faq-section-part .faq-part .card .collapse .card-body {
+    .cs-faq .faq-section-part .faq-part .accordion__item .accordion__panel .accodion-body {
         font-size: 16px;
     }
 
@@ -741,6 +744,11 @@
     .cs-testimonial .sec-title .title {
         font-size: 30px;
         line-height: 40px;
+    }
+    
+    /*Tab Part CSS*/
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab button {
+        padding: 16px;
     }
 }
 

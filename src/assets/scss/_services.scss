@@ -1,0 +1,86 @@
+.service-part {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -125px;
+    .single-service {
+        display: flex;
+        padding: 75px 90px;
+        background: var(--white-color);
+        box-shadow: 10px 0 69px rgba(0, 0, 0, 0.16);
+        .list-number {
+            width: 100%;
+            max-width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            background: #ebf1ff;
+            margin-right: 20px;
+            .list-title {
+                font-size: 24px;
+                text-transform: uppercase;
+                color: var(--primary-color);
+            }
+        }
+        .service-content {
+            .title {
+                line-height: 1.3;
+                margin-bottom: 15px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Responsive Part CSS
+
+/* Layout: Max 1600px */
+@media only screen and (max-width: 1600px) {
+    .cs-container {
+        max-width: 1460px;
+    }
+}
+
+
+/* Layout: Min 1199px */
+@media only screen and (max-width: 1199px) { 
+
+    /*Service Part CSS*/
+    .service-part .single-service {
+        padding: 50px;
+    }
+
+}
+
+/* Medium Layout: Max 991px. */
+@media only screen and (max-width: 991px) {
+
+    /*Service Part CSS*/
+    .service-part {
+        position: unset;
+        padding: 80px 0 70px;
+    }
+    .service-part .single-service {
+        display: block;
+        padding: 35px;
+    }
+    .service-part .single-service .list-number {
+        margin: 0 0 20px;
+    }
+    .service-part .single-service .service-content .title {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+}
+
+/* Mobile Layout: 767px. */
+@media only screen and (max-width: 767px) {
+    /*Service Part CSS*/
+    .service-part {
+        display: block;
+    }
+
+}

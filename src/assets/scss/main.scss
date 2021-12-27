@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
     Template Name: Rasin - CodeShaper - Responsive React Template
-    Description: Rasin - @
+    Description: Rasin - #
     Author: #
     Version: 1.0
 
@@ -9,11 +9,47 @@
 
     CSS INDEX
     ===================
-
+    01. About Part
+    02. Banner Part
+    03. Case Study Part
+    04. Client Part
+    05. Counter Part
+    06. CTA Part
+    07. Experience Part
+    08. Faq Part
+    09. Footer Part
+    10. Global Part
+    11. Header Part
+    12. ScrollToTop Part
+    13. Search Modal Part
+    14. Services Part
+    15. Tab Part
+    16. Testimonial Part
+    17. Video Part
+    18. Icon Part
 
 -----------------------------------------------------------------------------------*/
-@import 'design';
-@import 'responsive';
+
+@import 'about';
+@import 'banner';
+@import 'caseStudy';
+@import 'client';
+@import 'counter';
+@import 'cta';
+@import 'experience';
+@import 'faq';
+@import 'footer';
+@import 'global';
+@import 'header';
+@import 'scrollToTop';
+@import 'searchModal';
+@import 'services';
+@import 'tab';
+@import 'testimonial';
+@import 'video';
+
+
 @import '../fonts/icofont'; 
 
-
+// @import 'design';
+// @import 'responsive';

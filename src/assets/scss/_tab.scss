@@ -1,0 +1,166 @@
+.cs-business-tab {
+    .cs-tab-part {
+        .cs-business-nav {
+            display: flex;
+            border: none;
+            margin-top: -88px;
+            .react-tabs__tab {
+                width: 33.33%;
+                box-shadow: 10px 0 70px 0 rgba(0, 0, 0, 0.16);
+                button {
+                    padding: 70px;
+                    border: none;
+                    text-align: center;
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    border-radius: unset;
+                    background: var(--white-color);
+                    cursor: pointer;
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+                &.react-tabs__tab--selected {
+                    button {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+        .cs-business-content {
+            .single-tab-area {
+                .content-area {
+                    display: flex;
+                    .content-service {
+                        width: 100%;
+                        margin-right: 25px;
+                        padding: 70px 40px 50px 0;
+                        border-right: 1px solid #f2f3f6;
+                        .single-content-service {
+                            margin-bottom: 30px;
+                            display: flex;
+                            .icon-part {
+                                width: 100%;
+                                max-width: 70px;
+                                height: 70px;
+                                line-height: 70px;
+                                text-align: center;
+                                background: #ebf1ff;
+                                margin-right: 20px;
+                                img {
+                                    margin-left: 10px;
+                                }
+                            }
+                            .text-part {
+                                .title {
+                                    font-size: 20px;
+                                    font-weight: normal;
+                                    margin-bottom: 5px;
+                                }
+                                .desc {
+
+                                }
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    .content-text {
+                        margin-right: 25px;
+                        padding: 70px 0 50px;                        
+                        .desc {
+                            margin-bottom: 50px;
+                        }
+                        .list {
+                            li {
+                                position: relative;
+                                padding-left: 40px;
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    height: 2px;
+                                    width: 20px;
+                                    background: var(--primary-color);
+                                }
+                            }
+                        }
+                    }
+                    .content-img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Part CSS
+
+/* Medium Layout: Max 991px. */
+@media only screen and (max-width: 991px) {
+
+    /*Tab Part CSS*/
+    .cs-business-tab .cs-tab-part .cs-business-nav {
+        margin-top: 80px;
+    }
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab button {
+        padding: 30px;
+    }
+    .cs-business-tab .cs-tab-part .cs-business-content .single-tab-area .content-area {
+        display: block;
+    }
+    .cs-business-tab .cs-tab-part .cs-business-content .single-tab-area .content-area .content-service {
+        padding: 0;
+        margin: 50px 0 25px;
+        border: none;
+    }
+    .cs-business-tab .cs-tab-part .cs-business-content .single-tab-area .content-area .content-text {
+        padding: 0;
+        margin: 0 0 25px;
+    }
+    .cs-business-tab .cs-tab-part .cs-business-content .single-tab-area .content-area .content-text .desc {
+        margin-bottom: 30px;
+    }
+    .cs-business-tab .cs-tab-part .cs-business-content .single-tab-area .content-area .content-img {
+        margin: 0 0 80px;
+    }
+
+}
+
+/* Mobile Layout: 767px. */
+@media only screen and (max-width: 767px) {
+
+    /*Tab Part CSS*/
+    .cs-business-tab .cs-tab-part .cs-business-nav {
+        display: block;
+    }
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab {
+        width: 100%;
+        margin: 0;
+    }
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab button {
+        padding: 20px;
+        border-bottom: 1px solid #e6e9ef;
+    }
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab:last-child button {
+        border: none;
+    }
+
+}
+
+/* Small Device : 480px. */
+@media only screen and (max-width: 480px) {
+
+    /*Tab Part CSS*/
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab button {
+        padding: 16px;
+    }
+}
+

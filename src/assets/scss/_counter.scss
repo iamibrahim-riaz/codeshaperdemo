@@ -1,0 +1,70 @@
+.cs-counter {
+    padding: 100px 0 240px;
+    background: url('../img/bg/counter-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .counter-part {
+        display: flex;
+        justify-content: space-around;
+        .single-counter {
+            width: 100%;
+            margin-right: 30px;
+            border-right: 1px solid #fff;
+            .counter-icon {
+                display: inline-block;
+                padding: 25px 20px;
+                text-align: center;
+                background: #06050c;
+                margin-bottom: 20px;
+                img {
+
+                }
+            }
+            .counter-content {
+                span {
+                    display: block;
+                }
+                .counter-number {
+                    font-size: 40px;
+                }
+                .counter-title {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+                border-right: unset;
+            }
+        }
+    }
+}
+
+// Responsive Part CSS
+
+/* Layout: Min 1199px */
+@media only screen and (max-width: 1199px) {  
+
+    /*Counter Part CSS*/
+    .cs-counter .counter-part {
+        display: block;
+    }
+    .cs-counter .counter-part .single-counter {
+        margin: 0 0 30px;
+        border: none;
+    }
+    .cs-counter .counter-part .single-counter:last-child {
+        margin: 0;
+    }
+}
+
+/* Medium Layout: Max 991px. */
+@media only screen and (max-width: 991px) {
+
+    /*Counter Part CSS*/
+    .cs-counter {
+        padding: 80px 0 70px;
+    }
+
+}
+
