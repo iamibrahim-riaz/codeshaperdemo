@@ -1,0 +1,168 @@
+.cs-faq {
+    padding: 120px 0;
+    .faq-section-part {
+        display: flex;
+        justify-content: space-around;
+        .faq-part {
+            width: 100%;
+            max-width: 720px;
+            margin-right: 25px;
+            .accordion__item {
+                margin-bottom: 25px;
+                border-radius: unset;
+                border: none;
+                background: unset;
+                .accordion__heading {
+                    padding: 0;
+                    border: none;
+                    .accordion__button {
+                        width: 100%;
+                        height: 90px;
+                        line-height: 90px;
+                        text-align: left;
+                        padding: 0 25px;
+                        font-size: 16px;
+                        text-decoration: none;
+                        background: #f2f4f8;;
+                        border: 1px solid #e6e9ef;
+                        border-bottom: none;
+                        border-radius: unset;
+                        color: var(--title-color);
+                        position: relative;
+                        cursor: pointer;
+                        span {
+                            color: var(--primary-color);
+                            font-size: 20px;
+                        }
+                        &[aria-expanded="true"]{
+                            background: #fff;
+                            border-color: #e6e9ef;
+                            border-bottom: none;
+                            border-radius: unset;
+                            height: 80px;
+                            line-height: 80px;
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                right: 30px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                height: 2px;
+                                width: 12px;
+                                background: var(--title-color);
+                            }
+                        }
+                        
+                        &[aria-expanded="false"]::before {
+                            content: '+';
+                            position: absolute;
+                            right: 30px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 25px;
+                            height: unset;
+                            width: unset;
+                            background: unset;
+                        }
+                    }
+                }
+                .accordion__panel {
+                    border: 1px solid #e6e9ef;
+                    border-top: none;
+                    .accodion-body {
+                        padding: 0 25PX 25px;
+                        margin: -10px 0 0;
+                    }
+                }
+            }
+        }
+        .faq-content-part {
+            width: 100%;
+            .content-part {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+                align-items: center;
+                .list-part {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 5px;
+                        i {
+                            font-size: 30px;
+                            margin-right: 5px;
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+                .experience-year {
+                    padding: 33px 60px 18px;
+                    text-align: center;
+                    background: var(--primary-color);
+                    color: var(--white-color);
+                    display: grid;
+                    align-items: center;
+                    margin-left: 60px;
+                    span {
+                        font-size: 70px;
+                        line-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive Part CSS
+
+/* Medium Layout: Max 1188px. */
+@media only screen and (max-width: 1199px) {
+    /*Faq Part CSS*/
+    .cs-faq .faq-section-part .faq-content-part .content-part {
+        display: block;
+    }
+    .cs-faq .faq-section-part .faq-content-part .content-part .experience-year {
+        margin: 30px 0 0;
+    }
+}
+
+/* Medium Layout: Max 991px. */
+@media only screen and (max-width: 991px) {
+    /*Faq Part CSS*/
+    .cs-faq {
+        padding: 70px 0 80px;
+    }
+    .cs-faq .faq-section-part {
+        display: block;
+    }
+    .cs-faq .faq-section-part .faq-part {
+        margin: 0 0 50px;
+    }
+    .cs-faq .faq-section-part .faq-content-part .content-part {
+        margin-top: 30px;
+    }
+    .cs-faq .faq-section-part .faq-content-part .content-part .experience-year {
+        padding: 30px 60px;
+    }
+
+}
+
+/* Small Device : 480px. */
+@media only screen and (max-width: 480px) {
+
+    /*Faq Part CSS*/
+    .cs-faq .faq-section-part .faq-part .accordion__item .accordion__heading .accordion__button {
+        padding: 0 15px;
+        font-size: 13px;
+    }
+    .cs-faq .faq-section-part .faq-part .accordion__item .accordion__heading .accordion__button[aria-expanded="true"]::before,
+    .cs-faq .faq-section-part .faq-part .accordion__item .accordion__heading .accordion__button[aria-expanded="false"]::before {
+        font-size: 20px;
+        right: 10px;
+    }
+    .cs-faq .faq-section-part .faq-part .accordion__item .accordion__panel .accodion-body {
+        font-size: 16px;
+    }
+
+}
+

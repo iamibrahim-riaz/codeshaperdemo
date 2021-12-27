@@ -1,0 +1,118 @@
+.cs-banner {
+    .slider-part {
+        .single-slide {
+            position: relative;
+            padding: 285px 0 260px;
+            background: url('../img/slider/1.png');
+            background-size: cover;
+            background-position: center center;
+            .cs-slide-content {
+                .cs-slide-sub-heading {
+                    padding: 15px 20px;
+                    font-size: 20px;
+                    line-height: 1;
+                    color: var(--white-color);
+                    background: rgba(67, 75, 77, 0.74);
+                }
+                .cs-slide-heading {
+                    font-size: 90px;
+                    line-height: 100px;
+                    color: var(--white-color);
+                    margin: 70px 0 50px;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Part CSS
+
+/* Layout: Max 1440px */
+@media only screen and (max-width: 1440px) {
+
+    /*Banner Part CSS*/
+    .cs-banner .slider-part .single-slide{
+        padding: 250px 0 200px;
+    }
+    .cs-banner .slider-part .single-slide .cs-slide-content .cs-slide-heading {
+        font-size: 70px;
+        line-height: 80px;
+        margin: 50px 0 40px;
+    }
+
+}
+
+/* Layout: Max 1366px. */
+@media only screen and (max-width: 1366px) {
+
+    /*Banner Part CSS*/
+    .cs-banner .slider-part .single-slide{
+        padding: 250px 0 200px;
+    }
+    .cs-banner .slider-part .single-slide .cs-slide-content .cs-slide-heading {
+        font-size: 65px;
+        line-height: 75px;
+    }
+
+}
+
+/* Medium Layout: Max 991px. */
+@media only screen and (max-width: 991px) {
+
+    /*Banner Part CSS*/
+    .cs-banner .slider-part .single-slide {
+        padding: 200px 0 150px;
+    }
+    .cs-banner .slider-part .single-slide .cs-slide-content .cs-slide-heading {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+}
+
+/* Mobile Layout: 767px. */
+@media only screen and (max-width: 767px) {
+
+    /*Banner Part CSS*/
+    .cs-banner .slider-part .single-slide {
+        padding: 175px 0 120px;
+    }
+    .cs-banner .slider-part .single-slide .cs-slide-content .cs-slide-heading {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+}
+
+/* Small Device : 575px. */
+@media only screen and (max-width: 575px) {
+
+    /*Banner Part CSS*/
+    .cs-banner .slider-part .single-slide .cs-slide-content .cs-slide-sub-heading {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .cs-banner .slider-part .single-slide .cs-slide-content .cs-slide-heading {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .cs-banner .slider-part .single-slide {
+        padding: 150px 0 100px;
+    }
+    .cs-banner .slider-part .single-slide .cs-slide-content .cs-slide-heading {
+        margin: 30px 0;
+    }
+
+}
+
+/* Small Device : 480px. */
+@media only screen and (max-width: 480px) {
+
+    /*Banner Part CSS*/
+    .cs-banner .slider-part .single-slide .cs-slide-content .cs-slide-heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+

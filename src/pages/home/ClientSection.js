@@ -14,32 +14,31 @@ const Client = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 576,
-                arrows: false,
-                settings: {
-                    slidesToShow: 2,
-                },
-
-                breakpoint: 768,
-                arrows: false,
-                settings: {
-                    slidesToShow: 3,
-                },
-
-                breakpoint: 992,
-                arrows: false,
-                settings: {
-                    slidesToShow: 3,
-                },
-
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 4,
-                },
-
+                
                 breakpoint: 1366,
                 settings: {
                     slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                }
+            },
+            {
+
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
                 }
             }
         ]

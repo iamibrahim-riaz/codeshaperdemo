@@ -1,0 +1,45 @@
+.client-part {
+    border-top: 1px solid #211f2d;
+    padding-top: 100px;
+    position: relative;
+    .client-title {
+        font-size: 16px;
+        background: #0f0d1d;
+        color: var(--white-color);
+        text-transform: uppercase;
+        padding: 0 10px;
+        position: absolute;
+        top: -17px;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    .client-list {
+        padding: 0 90px;
+        padding-right: 30px;
+        .single-client {
+            text-align: center;
+        }
+    }
+}
+
+// Responsive Part CSS
+
+/* Medium Layout: Max 991px. */
+@media only screen and (max-width: 991px) {
+    /*Client Part CSS*/
+    .client-part {
+        padding-top: 50px;
+    }
+    .client-part .client-list {
+        padding: 0;
+    }
+}
+
+/* Small Device : 575px. */
+@media only screen and (max-width: 575px) {
+    .client-part .client-title {
+        width: 100%;
+        text-align: center;
+    }
+}
+
