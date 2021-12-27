@@ -459,7 +459,7 @@
     .cs-business-tab .cs-tab-part .cs-business-nav {
         margin-top: 80px;
     }
-    .cs-business-tab .cs-tab-part .cs-business-nav .nav-item a {
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab button {
         padding: 30px;
     }
     .cs-business-tab .cs-tab-part .cs-business-content .single-tab-area .content-area {
@@ -580,15 +580,15 @@
     .cs-business-tab .cs-tab-part .cs-business-nav {
         display: block;
     }
-    .cs-business-tab .cs-tab-part .cs-business-nav .nav-item {
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab {
         width: 100%;
         margin: 0;
     }
-    .cs-business-tab .cs-tab-part .cs-business-nav .nav-item a {
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab button {
         padding: 20px;
         border-bottom: 1px solid #e6e9ef;
     }
-    .cs-business-tab .cs-tab-part .cs-business-nav .nav-item:last-child a {
+    .cs-business-tab .cs-tab-part .cs-business-nav .react-tabs__tab:last-child button {
         border: none;
     }
 
