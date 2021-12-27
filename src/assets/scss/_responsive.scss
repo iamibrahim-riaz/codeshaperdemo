@@ -24,6 +24,14 @@
         max-width: 1410px;
     }
 
+    .cs-testimonial .slick-prev {
+        left: -450px;
+    }
+
+    .cs-testimonial .slick-next {
+        left: -380px;
+    }
+
     /*Footer Part CSS*/
     .cs-footer .cs-footer-widget .cs-widget-newsletter .newsletter-part .newsletter-subscribe input[type="email"] {
         width: 425px;
@@ -49,6 +57,24 @@
     /*About Part CSS*/
     .cs-about .about-top-part .img-part img {
         max-width: 500px;
+    }
+
+    /*Testimonial Part CSS*/
+    .cs-testimonial .sec-title .title {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .cs-testimonial .testimonial-divider .right-part {
+        max-width: 750px;
+    }
+    .cs-testimonial .slick-arrow {
+        top: 60%;
+    }
+    .cs-testimonial .slick-prev {
+        left: -430px;
+    }
+    .cs-testimonial .slick-next {
+        left: -370px;
     }
 
     /*Footer Part CSS*/
@@ -92,10 +118,10 @@
         top: 60%;
     }
     .cs-testimonial .slick-prev {
-        left: -430px;
+        left: -360px;
     }
     .cs-testimonial .slick-next {
-        left: -370px;
+        left: -300px;
     }
 
     /*Footer Part CSS*/
@@ -236,7 +262,7 @@
         z-index: 999;
     }
 
-    .cs-header .menu-bar.menu-sticky.sticky .menu-part .cs-main-menu .nav-menu li,
+    .cs-header .menu-bar.menu-sticky.sticky .menu-part .cs-main-menu .nav-menu  > li,
     .cs-header .menu-bar.menu-sticky.sticky .menu-part .cs-main-menu .social-part .social-icon li,
     .cs-header .menu-bar.menu-sticky.sticky .menu-part .cs-main-menu .social-part .searchbar a {
         height: 100px;
